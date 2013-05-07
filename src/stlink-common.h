@@ -204,6 +204,15 @@ static const chip_params_t devices[] = {
                     .bootrom_base = 0x1ff00000,
                     .bootrom_size = 0x1000
         },
+        {//RM0038
+            .chip_id = STM32_CHIPID_L1_HIGH,
+                    .description = "L1 High-density device",
+                    .flash_size_reg = 0x1ff8004c,
+                    .flash_pagesize = 0x100,
+                    .sram_size = 0xC000,
+                    .bootrom_base = 0x1ff00000,
+                    .bootrom_size = 0x2000
+        },
         {
             .chip_id = STM32_CHIPID_F1_CONN,
                     .description = "F1 Connectivity line device",
